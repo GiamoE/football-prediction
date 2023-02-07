@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="display_teams_padding_width">30dp</dimen>
+    <dimen name="display_teams_column_width">400dp</dimen>
+    <dimen name="display_teams_vertical_spacing">10dp</dimen>
+    <dimen name="display_team_row_height">30dp</dimen>
+    <dimen name="display_team_height">30dp</dimen>
+    <dimen name="divider_width">1dp</dimen>
+    <dimen name="team_text_width">85dp</dimen>
+    <dimen name="play_button_height">80dp</dimen>
+    <dimen name="play_button_width">220dp</dimen>
+    <dimen name="play_button_corner_radius">6dp</dimen>
+    <dimen name="header_image_padding_bottom">60dp</dimen>
+    <dimen name="header_image_padding_top">20dp</dimen>
+    <dimen name="main_column_text_height">60dp</dimen>
+    <dimen name="main_column_vertical_arrangement">20dp</dimen>
+    <dimen name="main_column_row_padding_bottom">40dp</dimen>
+
+    <dimen name="button_text_font_size">18sp</dimen>
+    <dimen name="title_font_size">30sp</dimen>
+</resources>

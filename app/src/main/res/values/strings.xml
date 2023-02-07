@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">miniclipassessment</string>
+    <string name="simulated">Results</string>
+    <string name="play">Teams to play</string>
+    <string name="header_image">Header Image</string>
+    <string name="button_simulated">Reset</string>
+    <string name="button_simulate">Simulate matches</string>
+    <string name="wins">Wins</string>
+    <string name="goals">Goals</string>
+</resources>
