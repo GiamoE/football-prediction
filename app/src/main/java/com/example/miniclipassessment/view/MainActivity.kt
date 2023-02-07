@@ -53,9 +53,9 @@ class MainActivity : ComponentActivity() {
         ) {
             HeaderImage(
                 Modifier.padding(
-                        bottom = dimensionResource(R.dimen.header_image_padding_bottom),
-                        top = dimensionResource(R.dimen.header_image_padding_top)
-                    )
+                    bottom = dimensionResource(R.dimen.header_image_padding_bottom),
+                    top = dimensionResource(R.dimen.header_image_padding_top)
+                )
             )
             val headerText: String =
                 if (simulated) resources.getString(R.string.simulated) else resources.getString(

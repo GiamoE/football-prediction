@@ -1,16 +1,14 @@
 package com.example.miniclipassessment.view.composables
 
-import android.widget.Toast
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.height
 import androidx.compose.material.Divider
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -21,7 +19,7 @@ import com.example.miniclipassessment.ui.theme.MiniclipassessmentTheme
 
 @Composable
 fun DisplayTeam(team: FootballTeam, ranking: Int?) {
-    val context = LocalContext.current
+    var showTeamStrength by remember { mutableStateOf(false) }
     Divider(color = Color.White, thickness = dimensionResource(R.dimen.divider_width))
     Row(
         modifier = Modifier.height(dimensionResource(R.dimen.display_team_row_height)),
@@ -39,9 +37,11 @@ fun DisplayTeam(team: FootballTeam, ranking: Int?) {
                 text = team.teamName,
                 fontWeight = FontWeight.Medium,
                 modifier = Modifier.clickable {
-                    Toast.makeText(context, team.players.toString(), Toast.LENGTH_LONG
-                    ).show()
+                    showTeamStrength = !showTeamStrength
                 })
+        }
+        if (showTeamStrength) {
+            DisplayTeamStrength(players = team.players)
         }
     }
 }

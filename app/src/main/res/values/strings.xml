@@ -7,4 +7,5 @@
     <string name="button_simulate">Simulate matches</string>
     <string name="wins">Wins</string>
     <string name="goals">Goals</string>
+    <string name="team_strength_text">Cumulative team strength</string>
 </resources>
